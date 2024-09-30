@@ -60,7 +60,7 @@ Add support for color palettes and advanced editing similar to graphics editors.
 Implement additional color models such as HSV, HLS, or XYZ.
 Extend error handling to provide more detailed feedback when color values fall outside of acceptable ranges.
 
-##Contributing
+## Contributing
 If you'd like to contribute to the project:
 1.Fork the repository on GitHub.
 2.Make your changes in a new branch.
