@@ -1,9 +1,9 @@
-#Color Converter
+# **Color Converter**
 
-##Project Overview
+## Project Overview
 This application is designed to allow users to interactively select and modify colors while displaying their components in three different color models: RGB, LAB, and CMYK. The primary goal is to facilitate seamless color transformations between these models, ensuring automatic recalculations across all models when any component is changed.
 
-##Color Models
+## Color Models
 The application utilizes the following color models:
 1. RGB (Red, Green, Blue):
 RGB is one of the most widely used color models, especially in digital displays. In this model, colors are created by combining varying intensities of red, green, and blue light. The intensity of each component ranges from 0 to 255. The RGB model is additive, meaning that higher values result in lighter colors, and combining all components at their maximum values produces white.
@@ -12,7 +12,7 @@ The LAB color model is designed to be more perceptually uniform than RGB or CMYK
 3. CMYK (Cyan, Magenta, Yellow, Key/Black):
 CMYK is the standard color model used in color printing. It is a subtractive color model where colors are produced by combining different percentages of cyan, magenta, yellow, and black ink. Unlike RGB, where light is added to produce colors, CMYK subtracts light, so adding all colors together creates black, and removing them all results in white (the color of the paper).
 
-##Key Features
+## Key Features
 1. Interactive Color Selection:
 Users can input colors using either RGB text boxes or adjust color sliders for more granular control.
 A color panel (colorDisplayPanel) displays the currently selected color based on the RGB values.
@@ -25,7 +25,7 @@ Changes in any color model (RGB, LAB, or CMYK) are reflected across the entire i
 4. Error Handling:
 In cases where the converted values exceed the permissible ranges (e.g., RGB values out of the 0-255 range), non-intrusive warnings are displayed, indicating rounding or clamping adjustments.
 
-##How It Works
+## How It Works
 1. RGB Input:
 Users can manually input values in the RTextBox, GTextBox, and BTextBox or use the sliders (RTrackBar, GTrackBar, BTrackBar) to adjust the RGB values.
 The RGB values are converted to LAB and CMYK models using the following transformation pipeline:
@@ -38,7 +38,7 @@ A panel (colorDisplayPanel) dynamically updates to show the color that correspon
 4. Reverse Transformation:
 Colors can also be inputted using LAB and CMYK models. The application converts them back to RGB to maintain consistency and synchronize with the sliders.
 
-##Installation and Usage
+## Installation and Usage
 1. Prerequisites:
 The application runs on Windows and requires .NET Framework compatible with Windows Forms.
 2. Running the Application:
@@ -47,7 +47,7 @@ The interface allows direct interaction with text boxes and sliders for color ma
 3. Source Code:
 The source code is available on GitHub. Clone or download the repository to access the full implementation.
 
-##Requirements
+## Requirements
 1. Input Methods: The application provides three ways to input colors:
 Manual input into RGB, LAB, and CMYK text boxes.
 Adjustment via RGB sliders.
@@ -55,7 +55,7 @@ Color selection from a palette (optional extension).
 2. Color Models: The application must handle color conversions between the following models:
 RGB ↔ LAB ↔ CMYK.
 
-##Future Improvements
+## Future Improvements
 Add support for color palettes and advanced editing similar to graphics editors.
 Implement additional color models such as HSV, HLS, or XYZ.
 Extend error handling to provide more detailed feedback when color values fall outside of acceptable ranges.
